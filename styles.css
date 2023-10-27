@@ -395,6 +395,12 @@ footer form .submit_btn {
     margin-left: 10vh; /* Enable horizontal scrolling */
 }
 
+@media (max-width: 768px) {
+  .cards_div {
+    margin-left: 0; /* Remove the left margin for mobile screens */
+  }
+}
+
 /* Individual team card styles (no changes necessary) */
 .team {
     width: 75%;
