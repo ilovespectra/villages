@@ -388,7 +388,7 @@ footer form .submit_btn {
     min-width: 100%; /* Ensure the container expands horizontally */
     margin-bottom: 20px; /* Adjust this to control spacing between team members */
     overflow-x: auto;
-    margin-left: 20vh; /* Enable horizontal scrolling */
+    margin-left: 10vh; /* Enable horizontal scrolling */
 }
 
 /* Individual team card styles (no changes necessary) */
