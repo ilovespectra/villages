@@ -434,7 +434,7 @@ footer form .submit_btn {
        font-size: 25px;
     }
     .team_div .team p, .aboutUs_text p{
-        font-size: 18px;
+        font-size: 22px;
     }
 }
 @media screen and (min-width:1110px) and (max-width:1290px){
@@ -443,10 +443,10 @@ footer form .submit_btn {
         font-size: 40px;
     }
     .team_div .team h1{
-       font-size: 22px;
+       font-size: 26px;
     }
     .team_div .team p, .aboutUs_text p{
-        font-size: 17px;
+        font-size: 22px;
     }
 }
 @media screen and (min-width:960px) and (max-width:1110px){
@@ -458,10 +458,10 @@ footer form .submit_btn {
         font-size: 35px;
     }
     .team_div .team h1{
-       font-size: 20px;
+       font-size: 26px;
     }
     .team_div .team p, .aboutUs_text p{
-        font-size: 15px;
+        font-size: 22px;
     }
 }
 @media screen and (min-width:768px) and (max-width:960px){
@@ -473,10 +473,10 @@ footer form .submit_btn {
         font-size: 30px;
     }
     .team_div .team h1{
-       font-size: 18px;
+       font-size: 24px;
     }
     .team_div .team p, .aboutUs_text p{
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 @media screen and (max-width:768px){
@@ -488,10 +488,10 @@ footer form .submit_btn {
         font-size: 26px;
     }
     .team_div .team h1{
-       font-size: 17px;
+       font-size: 22px;
     }
     .team_div .team p, .aboutUs_text p{
-        font-size: 14px;
+        font-size: 20px;
     }
 }
 
@@ -534,3 +534,30 @@ footer form .submit_btn {
     padding-top: 10%; /* 1:1 Aspect Ratio (change this as needed) */
     overflow: hidden;
 }
+
+/* Landing Page */
+.landing-page {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure it's on top of other content */
+  }
+  
+  .welcome-text {
+    font-size: 40px;
+    animation: fadeIn 2s ease-in-out 1;
+  }
+  
+  .blue-bar {
+    width: 70vh;
+    height: 5px;
+    background-color: rgb(30, 176, 255);
+    opacity: 50%;
+    box-shadow: 0 0 10px 5px rgba(30, 176, 255, 0.479); 
+  }
