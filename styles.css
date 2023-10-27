@@ -316,6 +316,9 @@ footer form .submit_btn {
     .aboutUs_row{
         align-items: center;
     }
+    .aboutUs_text p{
+        font-size: 20px;
+    }
 }
 @media screen  and (max-width:767px){
     /* ------------About Us Section---------------- */
