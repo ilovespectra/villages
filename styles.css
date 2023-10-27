@@ -12,11 +12,11 @@ header {
     z-index: 100;
 }
 
-nav {
-    font-size: 20px ;
-    display: flex ;
+nav{
+    font-size: 20px;
+    display: flex;
     align-items: center;
-    border-bottom: 1px solid white ;
+    border-bottom: 1px solid white;
     background-color: black;
 }
 
@@ -32,12 +32,6 @@ nav {
     align-items: center;
     gap: 10px;
     animation: fallInPlace 1.5s ease-in-out;
-}
-
-@media screen and (max-width: 767px) {
-    .businessName {
-        font-size: 16px;
-    }
 }
 
 .scroll-fade-in {
@@ -69,11 +63,10 @@ nav {
     justify-content: space-between;
 }
 
-.navbar-collapse {
+.navbar-collapse{
     justify-content: right;
 }
-
-.nav-item {
+.nav-item{
     padding: 0 10px;
 }
 
@@ -378,23 +371,28 @@ footer form .submit_btn {
    }
 }
 /* --------------Our Team Section----------------- */
-.ourTeam_div{
-    margin: 100px 100px;
+/* --------------Our Team Section----------------- */
+.ourTeam_div {
+    margin: 100px 0; /* Change this to adjust vertical spacing */
     color: black;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent items from wrapping to a new line */
 }
-.team_div{
-    overflow-x: auto;
-}
-.cards_div{
+
+.cards_div {
     display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow-x: auto;
+    justify-content: flex-start; /* Adjust this to change the alignment of items */
+    align-items: center;
+    min-width: 100%; /* Ensure the container expands horizontally */
+    margin-bottom: 20px; /* Adjust this to control spacing between team members */
+    overflow-x: auto; /* Enable horizontal scrolling */
 }
-.team{
+
+/* Individual team card styles (no changes necessary) */
+.team {
     width: 75%;
     min-width: 423px;
-    margin: 0 80px 20px 0;
+    margin-right: 20px; /* Adjust this to control spacing between team members */
     padding: 20px;
     border-style: solid;
     border-width: 3px;
@@ -440,7 +438,7 @@ footer form .submit_btn {
        font-size: 25px;
     }
     .team_div .team p, .aboutUs_text p{
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 @media screen and (min-width:1110px) and (max-width:1290px){
@@ -449,10 +447,10 @@ footer form .submit_btn {
         font-size: 40px;
     }
     .team_div .team h1{
-       font-size: 26px;
+       font-size: 22px;
     }
     .team_div .team p, .aboutUs_text p{
-        font-size: 22px;
+        font-size: 17px;
     }
 }
 @media screen and (min-width:960px) and (max-width:1110px){
@@ -464,10 +462,10 @@ footer form .submit_btn {
         font-size: 35px;
     }
     .team_div .team h1{
-       font-size: 26px;
+       font-size: 20px;
     }
     .team_div .team p, .aboutUs_text p{
-        font-size: 22px;
+        font-size: 15px;
     }
 }
 @media screen and (min-width:768px) and (max-width:960px){
@@ -479,10 +477,10 @@ footer form .submit_btn {
         font-size: 30px;
     }
     .team_div .team h1{
-       font-size: 24px;
+       font-size: 18px;
     }
     .team_div .team p, .aboutUs_text p{
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 @media screen and (max-width:768px){
@@ -494,10 +492,10 @@ footer form .submit_btn {
         font-size: 26px;
     }
     .team_div .team h1{
-       font-size: 22px;
+       font-size: 17px;
     }
     .team_div .team p, .aboutUs_text p{
-        font-size: 20px;
+        font-size: 14px;
     }
 }
 
@@ -540,7 +538,6 @@ footer form .submit_btn {
     padding-top: 10%; /* 1:1 Aspect Ratio (change this as needed) */
     overflow: hidden;
 }
-
 /* Landing Page */
 .landing-page {
     position: fixed;
