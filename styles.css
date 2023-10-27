@@ -1,0 +1,504 @@
+body {
+    font-family: sans-serif !important;
+    box-sizing: border-box !important;
+    background-color: black !important;
+    color: white !important;
+}
+
+/* -----------header-------------- */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    font-size: 20px ;
+    display: flex ;
+    align-items: center;
+    border-bottom: 1px solid white ;
+    background-color: black;
+}
+
+.businesslogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-collapse {
+    justify-content: right;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+/* -------------footer------------- */
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.footer_form {
+    display: flex !important;
+}
+
+.form_outer_div {
+    margin: 50px auto 100px !important;
+    width: 75% !important;
+}
+
+.form_outer_div h1 {
+    text-align: center !important;
+    font-weight: 700 !important;
+}
+
+.form_inner_div {
+    display: flex !important;
+    flex-direction: column !important;
+    row-gap: 30px !important;
+}
+
+footer input {
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid white !important;
+    width: 100% !important;
+    height: 50px !important;
+}
+
+footer form .submit_btn {
+    background-color: white !important;
+    color: black !important;
+    width: 160px !important;
+    height: 50px !important;
+}
+
+@media screen and (max-width: 380px) {
+    /* ------------footer---------------- */
+    footer input {
+        height: 30px !important;
+    }
+
+    footer form .submit_btn {
+        width: 100px !important;
+        height: 30px !important;
+    }
+}
+
+/* -------------banner section-------------- */
+.banner {
+    background-color: black !important;
+    color: white !important;
+    padding: 100px 15% 70px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+.down_arrow {
+    text-align: center !important;
+    padding: 10px !important;
+}
+
+.down_arrow a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.banner_heading_img {
+    display: flex;
+}
+
+.banner_heading_img .heading {
+    width: 60%;
+    margin-right: 0px;
+}
+
+.banner_heading_img .heading h1 {
+    font-size: 120px !important;
+    animation: fadeIn 2s ease-in-out 1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.banner_heading_img .banner_img {
+    width: 50%;
+    position: relative;
+}
+
+.banner_heading_img .banner_img img {
+    width: 110%;
+    margin: 0px;
+    position: relative;
+    bottom: 0px;
+}
+
+@media screen and (min-width: 1264px) and (max-width: 1400px) {
+    /* -------------banner-------------- */
+    .banner_heading_img .heading h1 {
+        font-size: 100px !important;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1264px) {
+    /* -------------banner-------------- */
+    .banner_heading_img .heading h1 {
+        font-size: 80px !important;
+    }
+}
+@media screen and (min-width:767px) and (max-width:850px){
+    /* ------------banner---------------- */
+    .banner_heading_img .heading h1 {
+        font-size: 60px;
+    }
+}
+@media screen  and (min-width:560px) and (max-width:767px){
+    /* ------------banner---------------- */
+    .banner_heading_img .heading h1 {
+        font-size: 40px;
+    }
+}
+@media screen  and (min-width:450px) and (max-width:560px){
+    /* ------------banner---------------- */
+    .banner_heading_img .heading h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:450px){
+    /* ------------banner---------------- */
+    .banner_heading_img .heading h1 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:767px){
+    /* ------------banner---------------- */
+    .banner{
+        padding: 100px 10% 40px;
+    }
+    .banner_heading_img {
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner_heading_img .banner_img{
+        width: 100%;
+    }
+    .banner_heading_img .heading{
+        width: 100%;
+    }
+    .banner_heading_img .banner_img img{
+        width: 100%;
+        position: static;
+    }
+}
+/* -----------------About Us Section-------------- */
+.aboutUs_row{
+    display: flex;
+    margin: 100px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutUs_pic{
+    width: 30%;
+}
+.aboutUs_pic img{
+    width: 100%;
+}
+.aboutUs_text h1{
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.aboutUs_text p{
+    font-size: 20px;
+}
+.aboutUs_text{
+    width: 60%;
+}
+@media screen and (min-width:1290px) and (max-width:1350px){
+    /* ------------About Us Section---------------- */
+    .aboutUs_row{
+        align-items: center;
+    }
+}
+@media screen and (min-width:1110px) and (max-width:1290px){
+    /* ------------About Us Section---------------- */
+    .aboutUs_row{
+        margin: 100px 70px;
+    }
+    .aboutUs_text h1{
+        margin-bottom: 30px;
+    }
+    .aboutUs_row{
+        align-items: center;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1110px){
+    /* ------------About Us Section---------------- */
+    .aboutUs_row{
+        margin: 100px 70px;
+    }
+    .aboutUs_text h1{
+        margin-bottom: 20px;
+    }
+    .aboutUs_row{
+        align-items: center;
+    }
+}
+@media screen and (min-width:767px) and (max-width:960px){
+    /* ------------About Us Section---------------- */
+    .aboutUs_pic{
+        width: 40%;
+        padding: 0 30px 0 0;
+    }
+    .aboutUs_row{
+        margin: 80px 50px;
+    }
+    .aboutUs_text h1{
+        margin-bottom: 20px;
+    }
+    .aboutUs_row{
+        align-items: center;
+    }
+}
+@media screen  and (max-width:767px){
+    /* ------------About Us Section---------------- */
+    .aboutUs_row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .aboutUs_row{
+        display: block;
+        text-align: center;
+        margin: 50px auto;
+    }
+    .aboutUs_text h1{
+        margin-bottom: auto;
+    }
+    .aboutUs_text{
+        width: 100%;
+    }
+}
+@media screen  and (min-width:600px) and (max-width:767px){
+    .aboutUs_text h1{
+        padding-bottom: 15px;
+    }
+    .aboutUs_text p{
+        padding: 0 70px;
+    }
+    .aboutUs_pic{
+        margin: 0 auto;
+        padding: 20px;
+        width: 50%;
+    }
+}
+@media screen and (min-width:460px) and (max-width:600px){
+     /* ------------About Us Section---------------- */
+    .aboutUs_text h1{
+        padding-bottom: 10px;
+    }
+    .aboutUs_text p{
+        padding: 0 70px;
+    }
+    .aboutUs_pic{
+        margin: 0 auto;
+        padding: 20px;
+        width: 60%;
+    }
+}
+@media screen  and (max-width:460px){
+    /* ------------About Us Section---------------- */
+   .aboutUs_text h1{
+       padding-bottom: 10px;
+   }
+   .aboutUs_text p{
+       padding: 0 50px;
+   }
+   .aboutUs_pic{
+       margin: 0 auto;
+       padding: 20px;
+       width: 80%;
+   }
+}
+/* --------------Our Team Section----------------- */
+.ourTeam_div{
+    margin: 100px 100px;
+    color: black;
+}
+.team_div{
+    overflow-x: auto;
+}
+.cards_div{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+}
+.team{
+    width: 75%;
+    min-width: 423px;
+    margin: 0 80px 20px 0;
+    padding: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+.gallery_section{
+    width: 75%;
+    min-height: 300px;
+    min-width: 423px;
+    justify-self: center;
+    margin: 0 80px 20px 0;
+    padding: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+.ourTeam_div>h1{
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.team:hover {
+    background-color: white;
+    color: black;
+    transition-delay: 0.3s;
+}
+.team h1{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 61px;
+}
+.team p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+}
+@media screen and (min-width:1290px) and (max-width:1410px){
+    /* --------------Our Team Section----------------- */
+    .ourTeam_div>h1, .aboutUs_text h1{
+        font-size: 50px;
+    }
+    .team_div .team h1{
+       font-size: 25px;
+    }
+    .team_div .team p, .aboutUs_text p{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:1110px) and (max-width:1290px){
+    /* --------------Our Team Section----------------- */
+    .ourTeam_div>h1, .aboutUs_text h1{
+        font-size: 40px;
+    }
+    .team_div .team h1{
+       font-size: 22px;
+    }
+    .team_div .team p, .aboutUs_text p{
+        font-size: 17px;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1110px){
+    /* --------------Our Team Section----------------- */
+    .ourTeam_div{
+        margin: 100px 70px;
+    }
+    .ourTeam_div>h1, .aboutUs_text h1{
+        font-size: 35px;
+    }
+    .team_div .team h1{
+       font-size: 20px;
+    }
+    .team_div .team p, .aboutUs_text p{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:960px){
+    /* --------------Our Team Section----------------- */
+    .ourTeam_div{
+        margin: 50px 50px;
+    }
+    .ourTeam_div>h1, .aboutUs_text h1{
+        font-size: 30px;
+    }
+    .team_div .team h1{
+       font-size: 18px;
+    }
+    .team_div .team p, .aboutUs_text p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:768px){
+    /* --------------Our Team Section----------------- */
+    .ourTeam_div{
+        margin: 50px 50px;
+    }
+    .ourTeam_div>h1, .aboutUs_text h1{
+        font-size: 26px;
+    }
+    .team_div .team h1{
+       font-size: 17px;
+    }
+    .team_div .team p, .aboutUs_text p{
+        font-size: 14px;
+    }
+}
+
+/* Add these styles to your existing CSS */
+.view-gallery-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px; /* Makes it pill-shaped */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  .view-gallery-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .view-gallery-button:active {
+    transform: scale(0.95);
+  }
+  .underdog-sphere-image {
+    display: block;
+    margin: 20px auto; /* Adjust margin for positioning */
+    max-width: 50%; /* Set the maximum width to 10% of the window width */
+    width: 20vh; /* Adjust the width as needed */
+  }
+  h3 {
+    white-space: normal; /* This allows text to wrap */
+    line-height: 1.2; /* Adjust this value to control line spacing */
+  }
+  
+  .team-img-container {
+    width: 100%;
+    position: relative;
+    padding-top: 10%; /* 1:1 Aspect Ratio (change this as needed) */
+    overflow: hidden;
+}
