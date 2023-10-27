@@ -24,6 +24,38 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
+    animation: fallInPlace 1.5s ease-in-out;
+}
+
+.businessName {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: fallInPlace 1.5s ease-in-out;
+}
+
+.scroll-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.banner .scroll-fade-in,
+.aboutUs_row .scroll-fade-in,
+.ourTeam_div .scroll-fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .container-fluid {
