@@ -334,6 +334,7 @@ footer form .submit_btn {
     }
     .aboutUs_text{
         width: 100%;
+        margin-left: 0px;
     }
 }
 @media screen  and (min-width:600px) and (max-width:767px){
