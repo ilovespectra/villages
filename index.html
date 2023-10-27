@@ -11,13 +11,6 @@
       name="description"
       content="VillagesDAO Clean Water Intiative"
     />
-<!--     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -90,7 +83,7 @@
           </section>
       <section id="aboutus" class="aboutUs_section">
         <div class="aboutUs_div">
-          <div class="aboutUs_row">
+          <div class="aboutUs_row scroll-fade-in">
             <div class="aboutUs_pic">
               <img src="./images/aboutUsPic.png" alt="about_us_pic" />
             </div>
@@ -113,7 +106,7 @@
               </p>
             </div>
           </div>
-          <div class="aboutUs_row">
+          <div class="aboutUs_row scroll-fade-in">
           <div class="aboutUs_text">
             <h1>The Solution</h1>
             <p>
@@ -137,11 +130,11 @@
       </section>
       
       <section id="theteam" class="theTeam">
-        <div class="theTeam_div">
+        <div class="theTeam_div scroll-fade-in">
             <h1>The Team</h1>
             <div class="team_div">
                 <div class="cards_div">
-                    <div class="team">
+                    <div class="team scroll-fade-in">
                       <center>
                       <div class="team-img-container">
                         <img src="./images/mariya.png" alt="mariya" />
@@ -153,7 +146,7 @@
                           training on the Helium Network and Solana blockchain, she also supervises Rashmin's activities and identifies new villages for collaboration. 
                         </p>
                     </div>
-                    <div class="team">
+                    <div class="team scroll-fade-in">
                       <center>
                       <div class="team-img-container">
                         <img src="./images/rashmin.png" alt="rashmin" />
@@ -165,7 +158,7 @@
                           Helium Network and Solana blockchain, she ensures these systems run seamlessly.
                         </p>
                     </div>
-                    <div class="team">
+                    <div class="team scroll-fade-in">
                       <center>
                       <div class="team-img-container">
                         <img src="./images/tanner.png" alt="tanner" />
@@ -178,7 +171,7 @@
                           programming insights and ecosystem knowledge.
                         </p>
                     </div>
-                    <div class="team">
+                    <div class="team scroll-fade-in">
                       <center>
                       <div class="team-img-container">
                         <img src="./images/justin.png" alt="justin" />
@@ -191,7 +184,7 @@
                           insights.
                         </p>
                     </div>
-                    <div class="team">
+                    <div class="team scroll-fade-in">
                       <center>
                       <div class="team-img-container">
                         <img src="./images/david.png" alt="david" />
@@ -203,7 +196,7 @@
                           various web3 and NFT communities across multiple blockchains, David amplifies outreach and garners extensive support for the project. 
                         </p>
                     </div>
-                    <div class="team">
+                    <div class="team scroll-fade-in">
                       <center>
                       <div class="team-img-container">
                         <img src="./images/mark.png" alt="mark" />
@@ -221,7 +214,7 @@
       </section>
       <center>
         <section id="gallery" class="gallery_section">
-          <div class="gallery_div">
+          <div class="gallery_div scroll-fade-in">
             <h1>Gallery</h1>
             <center>
             <p class="gallery">
@@ -263,10 +256,36 @@
       </div>
     </footer> -->
     <script src="./script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+    <script>
+      // Function to handle the intersection of sections
+      function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // If the section is in the viewport, add the scroll-animate class
+            entry.target.classList.add('scroll-animate');
+          } else {
+            // If the section is out of the viewport, remove the scroll-animate class
+            entry.target.classList.remove('scroll-animate');
+          }
+        });
+      }
+    
+      // Options for the Intersection Observer
+      const options = {
+        threshold: 0.5, // Trigger when 50% of the section is in the viewport
+      };
+    
+      // Create an Intersection Observer
+      const observer = new IntersectionObserver(handleIntersection, options);
+    
+      // Target the sections you want to observe
+      const sectionsToObserve = document.querySelectorAll('.scroll-fade-in');
+    
+      // Add each section to the observer
+      sectionsToObserve.forEach((section) => {
+        observer.observe(section);
+      });
+    </script>
+    
   </body>
 </html>
