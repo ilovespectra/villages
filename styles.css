@@ -17,7 +17,11 @@ nav{
     display: flex;
     align-items: center;
     border-bottom: 1px solid white;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar-toggler{
+    color: white;
 }
 
 .businesslogo {
@@ -418,8 +422,8 @@ footer form .submit_btn {
     margin-bottom: 30px;
 }
 .team:hover {
-    background-color: rgba(28, 121, 228, 0.374);
-    color: rgb(255, 255, 255);
+    background-color: rgb(195, 219, 246);
+    color: rgb(0, 0, 0);
     border-radius: 25px;
     transition-delay: 0.3s;
 }
