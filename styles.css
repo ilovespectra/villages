@@ -263,6 +263,7 @@ footer form .submit_btn {
 }
 .aboutUs_text{
     width: 60%;
+    margin-left: 50px;
 }
 @media screen and (min-width:1290px) and (max-width:1350px){
     /* ------------About Us Section---------------- */
@@ -376,7 +377,8 @@ footer form .submit_btn {
     margin: 100px 0; /* Change this to adjust vertical spacing */
     color: black;
     overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent items from wrapping to a new line */
+    white-space: nowrap;
+    align-items: center; 
 }
 
 .cards_div {
@@ -385,7 +387,8 @@ footer form .submit_btn {
     align-items: center;
     min-width: 100%; /* Ensure the container expands horizontally */
     margin-bottom: 20px; /* Adjust this to control spacing between team members */
-    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-x: auto;
+    margin-left: 20vh; /* Enable horizontal scrolling */
 }
 
 /* Individual team card styles (no changes necessary) */
@@ -415,8 +418,9 @@ footer form .submit_btn {
     margin-bottom: 30px;
 }
 .team:hover {
-    background-color: white;
-    color: black;
+    background-color: rgba(28, 121, 228, 0.374);
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
     transition-delay: 0.3s;
 }
 .team h1{
