@@ -339,6 +339,9 @@ footer form .submit_btn {
         width: 100%;
         margin-left: 0px;
     }
+    .aboutUs_text p{
+        font-size: 25px;
+    }
 }
 @media screen  and (min-width:600px) and (max-width:767px){
     .aboutUs_text h1{
@@ -351,6 +354,9 @@ footer form .submit_btn {
         margin: 0 auto;
         padding: 20px;
         width: 50%;
+    }
+    .aboutUs_text p{
+        font-size: 25px;
     }
 }
 @media screen and (min-width:460px) and (max-width:600px){
@@ -366,6 +372,9 @@ footer form .submit_btn {
         padding: 20px;
         width: 60%;
     }
+    .aboutUs_text p{
+        font-size: 25px;
+    }
 }
 @media screen  and (max-width:460px){
     /* ------------About Us Section---------------- */
@@ -380,6 +389,10 @@ footer form .submit_btn {
        padding: 20px;
        width: 80%;
    }
+
+   .aboutUs_text p{
+    font-size: 25px;
+}
 }
 /* --------------Our Team Section----------------- */
 /* --------------Our Team Section----------------- */
