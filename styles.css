@@ -21,8 +21,10 @@ nav{
 }
 
 .navbar-toggler{
-    color: white;
+    color: white !important;
+    visibility: visible !important;
 }
+
 
 .businesslogo {
     display: flex;
@@ -396,11 +398,13 @@ footer form .submit_btn {
 }
 
 @media (max-width: 768px) {
-  .cards_div {
-    margin-left: 0; /* Remove the left margin for mobile screens */
+    .cards_div {
+      margin-left: 0; /* Remove the left margin for mobile screens */
+    }
   }
+  .scroll-animate {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
-
 /* Individual team card styles (no changes necessary) */
 .team {
     width: 75%;
@@ -486,6 +490,10 @@ footer form .submit_btn {
     /* --------------Our Team Section----------------- */
     .ourTeam_div{
         margin: 50px 50px;
+        
+    }
+    .scroll-animate {
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     }
     .ourTeam_div>h1, .aboutUs_text h1{
         font-size: 30px;
@@ -501,6 +509,9 @@ footer form .submit_btn {
     /* --------------Our Team Section----------------- */
     .ourTeam_div{
         margin: 50px 50px;
+    }
+    .scroll-animate {
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     }
     .ourTeam_div>h1, .aboutUs_text h1{
         font-size: 26px;
