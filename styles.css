@@ -160,7 +160,7 @@ footer form .submit_btn {
 }
 
 .banner_heading_img .heading h1 {
-    font-size: 120px !important;
+    font-size: 120px;
     animation: fadeIn 2s ease-in-out 1;
 }
 
@@ -191,14 +191,14 @@ footer form .submit_btn {
 @media screen and (min-width: 1264px) and (max-width: 1400px) {
     /* -------------banner-------------- */
     .banner_heading_img .heading h1 {
-        font-size: 100px !important;
+        font-size: 100px;
     }
 }
 
 @media screen and (min-width: 850px) and (max-width: 1264px) {
     /* -------------banner-------------- */
     .banner_heading_img .heading h1 {
-        font-size: 80px !important;
+        font-size: 80px;
     }
 }
 @media screen and (min-width:767px) and (max-width:850px){
