@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", async function () {
+  console.log("API_ENDPOINT:", process.env.API_ENDPOINT);
+  console.log("PUBKEY:", process.env.PUBKEY);
+  console.log("MINT:", process.env.MINT);
 
   const publicKey = process.env.PUBKEY;
   const tokenMint = process.env.MINT;
