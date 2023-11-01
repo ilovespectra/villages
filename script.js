@@ -1,14 +1,12 @@
 document.addEventListener("DOMContentLoaded", async function () {
-  console.log("API_ENDPOINT:", process.env.API_ENDPOINT);
-  console.log("PUBKEY:", process.env.PUBKEY);
-  console.log("MINT:", process.env.MINT);
-
-  const publicKey = process.env.PUBKEY;
-  const tokenMint = process.env.MINT;
-  const apiEndpoint = process.env.API_ENDPOINT;
+  // Define the public key of your wallet
+  const publicKey = "4j2zhGEZuP8puTsSJMgwUnjafHcU1h2PUA1WNPnCipc5";
+  
+  // Define the token mint address (USDC mint address)
+  const tokenMint = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v";
 
   // Make the API request to fetch the balance
-  const response = await fetch(apiEndpoint, {
+  const response = await fetch("https://old-weathered-snow.solana-mainnet.quiknode.pro/d83baa8fdaea9cbd48e4c5657bcf6e44238c0e05/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
