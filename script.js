@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", async function () {
 
-  const publicKey = PUBKEY;
-  const tokenMint = MINT;
-  const apiEndpoint = API_ENDPOINT;
+  const publicKey = process.env.PUBKEY;
+  const tokenMint = process.env.MINT;
+  const apiEndpoint = process.env.API_ENDPOINT;
 
   // Make the API request to fetch the balance
   const response = await fetch(apiEndpoint, {
