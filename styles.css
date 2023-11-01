@@ -160,7 +160,7 @@ footer form .submit_btn {
 }
 
 .banner_heading_img .heading h1 {
-    font-size: 120px;
+    font-size: 120px !important;
     animation: fadeIn 2s ease-in-out 1;
 }
 
@@ -191,38 +191,38 @@ footer form .submit_btn {
 @media screen and (min-width: 1264px) and (max-width: 1400px) {
     /* -------------banner-------------- */
     .banner_heading_img .heading h1 {
-        font-size: 100px;
+        font-size: 100px !important;
     }
 }
 
 @media screen and (min-width: 850px) and (max-width: 1264px) {
     /* -------------banner-------------- */
     .banner_heading_img .heading h1 {
-        font-size: 80px;
+        font-size: 80px !important;
     }
 }
 @media screen and (min-width:767px) and (max-width:850px){
     /* ------------banner---------------- */
     .banner_heading_img .heading h1 {
-        font-size: 75px;
+        font-size: 60px;
     }
 }
 @media screen  and (min-width:560px) and (max-width:767px){
     /* ------------banner---------------- */
     .banner_heading_img .heading h1 {
-        font-size: 70px;
+        font-size: 40px;
     }
 }
 @media screen  and (min-width:450px) and (max-width:560px){
     /* ------------banner---------------- */
     .banner_heading_img .heading h1 {
-        font-size: 65px;
+        font-size: 40px;
     }
 }
 @media screen and (max-width:450px){
     /* ------------banner---------------- */
     .banner_heading_img .heading h1 {
-        font-size: 50px;
+        font-size: 20px;
     }
 }
 @media screen and (max-width:767px){
@@ -591,7 +591,7 @@ footer form .submit_btn {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 999; /* Ensure it's on top of other content */
+    z-index: 999;
   }
   
   .welcome-text {
@@ -605,4 +605,70 @@ footer form .submit_btn {
     background-color: rgb(30, 176, 255);
     opacity: 50%;
     box-shadow: 0 0 10px 5px rgba(30, 176, 255, 0.479); 
+  }
+
+/* Fix the menu bar at the top */
+#menu-bar.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #101010; 
+    z-index: 1000;
+  }
+  
+  /* Style the ticker */
+  #ticker.fixed-top {
+    position: fixed;
+    top: 50px; 
+    left: 0;
+    width: 100%;
+    background-color: #555; 
+    color: #fff; 
+    padding: 10px;
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  /* Additional styles for the ticker text (optional) */
+  #ticker.fixed-top span {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Style the ticker container */
+  #ticker.fixed-top {
+    position: fixed;
+    top: 50px; 
+    left: 0;
+    width: 100%;
+    background-color: #0c0c0c; 
+    padding: 5px 0;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+.ticker-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scrollText 20s linear infinite;
+    font-family: 'VT323', monospace; 
+    font-size: 26px;
+    color: #d4ff00; 
+    text-shadow: 0 0 10px #d9ff00;
+  }
+  
+  /* Keyframes for the scrolling animation */
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }  
+  
+  /* Apply the animation to the ticker text */
+  .ticker-text span {
+    animation: scrollText 20s linear infinite;
   }
