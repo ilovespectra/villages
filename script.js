@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", async function () {
-  // Define the public key of your wallet
-  const publicKey = process.env.NEXT_PUBLIC_PUBKEY;
-  
-  // Define the token mint address (USDC mint address)
-  const tokenMint = process.env.NEXT_PUBLIC_MINT;
+
+  const publicKey = PUBKEY;
+  const tokenMint = MINT;
+  const apiEndpoint = API_ENDPOINT;
 
   // Make the API request to fetch the balance
-  const response = await fetch(process.env.NEXT_PUBLIC_API_KEY, {
+  const response = await fetch(apiEndpoint, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
