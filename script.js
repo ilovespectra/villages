@@ -25,12 +25,15 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   if (response.ok) {
     const data = await response.json();
-    const balance = data.result.value[0].account.data.parsed.info.tokenAmount.uiAmountString;
-    
-    // Display the balance in the "Funds Raised" section
+    const balance = data.result.value[0].account.data.parsed.info.tokenAmount.uiAmount;
+  
+    // Convert the balance to a string with 2 decimal places
+    const formattedBalance = parseFloat(balance).toFixed(2);
+  
+    // Display the formatted balance in the "Funds Raised" section
     const fundsRaisedElement = document.getElementById("fundsRaised");
     if (fundsRaisedElement) {
-      fundsRaisedElement.textContent = balance;
+      fundsRaisedElement.textContent = `$${formattedBalance}`; // Add the "$" symbol if needed
     }
   } else {
     console.error("Error fetching wallet balance:", response.status);
