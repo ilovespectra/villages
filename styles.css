@@ -3,7 +3,7 @@ body {
     box-sizing: border-box !important;
     background-color: black !important;
     color: white !important;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 /* -----------header-------------- */
@@ -19,7 +19,7 @@ nav{
     align-items: center;
     border-bottom: 1px solid white;
     background-color: rgb(0, 0, 0);
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 .navbar-toggler{
@@ -83,6 +83,7 @@ footer {
     background-color: black;
     color: white;
     padding: 10px;
+    justify-content: center;
 }
 
 .footer_form {
@@ -140,6 +141,7 @@ footer form .submit_btn {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
+    overflow-x: hidden; 
 }
 
 .down_arrow {
@@ -154,16 +156,19 @@ footer form .submit_btn {
 
 .banner_heading_img {
     display: flex;
+    overflow-x: hidden; 
 }
 
 .banner_heading_img .heading {
     width: 60%;
     margin-right: 0px;
+    overflow-x: hidden; 
 }
 
 .banner_heading_img .heading h1 {
     font-size: 120px !important;
     animation: fadeIn 2s ease-in-out 1;
+    overflow-x: hidden; 
 }
 
 @keyframes fadeIn {
@@ -181,6 +186,7 @@ footer form .submit_btn {
 .banner_heading_img .banner_img {
     width: 50%;
     position: relative;
+    overflow-x: hidden; 
 }
 
 .banner_heading_img .banner_img img {
@@ -188,6 +194,7 @@ footer form .submit_btn {
     margin: 0px;
     position: relative;
     bottom: 0px;
+    overflow-x: hidden; 
 }
 
 @media screen and (min-width: 1264px) and (max-width: 1400px) {
@@ -408,12 +415,11 @@ footer form .submit_btn {
 
 .cards_div {
     display: flex;
-    justify-content: flex-start; /* Adjust this to change the alignment of items */
+    justify-content: center;
     align-items: center;
-    min-width: 100%; /* Ensure the container expands horizontally */
-    margin-bottom: 20px; /* Adjust this to control spacing between team members */
+    min-width: 90%;
+    margin-bottom: 20px;
     overflow-x: auto;
-    margin-left: 10vh; /* Enable horizontal scrolling */
 }
 
 @media (max-width: 768px) {
@@ -426,18 +432,19 @@ footer form .submit_btn {
 }
 /* Individual team card styles (no changes necessary) */
 .team {
-    width: 75%;
-    min-width: 423px;
-    margin-right: 20px; /* Adjust this to control spacing between team members */
+    width: 80%;
+    min-width: 400px;
+    margin-right: 20px;
+    margin-left: 20px;
     padding: 20px;
     border-style: solid;
     border-width: 3px;
     border-color: black;
 }
 .gallery_section{
-    width: 75%;
+    width: 100%;
     min-height: 300px;
-    min-width: 423px;
+    min-width: 400px;
     justify-self: center;
     margin: 0 80px 20px 0;
     padding: 20px;
@@ -593,7 +600,7 @@ footer form .submit_btn {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 999; /* Ensure it's on top of other content */
   }
   
   .welcome-text {
@@ -614,18 +621,18 @@ footer form .submit_btn {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #101010; 
+    background-color: #101010; /* Change the background color as needed */
     z-index: 1000;
   }
   
   /* Style the ticker */
   #ticker.fixed-top {
     position: fixed;
-    top: 50px; 
+    top: 50px; /* Adjust this value as needed to position the ticker below the menu bar */
     left: 0;
     width: 100%;
-    background-color: #555; 
-    color: #fff; 
+    background-color: #555; /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
     padding: 10px;
     z-index: 1000;
     text-align: center;
@@ -640,10 +647,10 @@ footer form .submit_btn {
   /* Style the ticker container */
   #ticker.fixed-top {
     position: fixed;
-    top: 50px; 
+    top: 50px; /* Adjust this value as needed to position the ticker below the menu bar */
     left: 0;
     width: 100%;
-    background-color: #0c0c0c; 
+    background-color: #0c0c0c; /* Change the background color as needed */
     padding: 5px 0;
     z-index: 1000;
     overflow: hidden;
@@ -654,10 +661,10 @@ footer form .submit_btn {
     white-space: nowrap;
     overflow: hidden;
     animation: scrollText 20s linear infinite;
-    font-family: 'VT323', monospace; 
+    font-family: 'VT323', monospace; /* Use the VT323 font for a ticker tape look */
     font-size: 26px;
-    color: #d4ff00; 
-    text-shadow: 0 0 10px #d9ff00;
+    color: #d4ff00; /* Blue text color */
+    text-shadow: 0 0 10px #d9ff00; /* Glowing drop shadow effect */
   }
   
   /* Keyframes for the scrolling animation */
@@ -672,5 +679,46 @@ footer form .submit_btn {
   
   /* Apply the animation to the ticker text */
   .ticker-text span {
-    animation: scrollText 20s linear infinite;
+    animation: scrollText 20s linear infinite; /* Adjust the speed as needed */
   }
+  
+  #socials {
+    text-align: center; /* Center the icons horizontally */
+  }
+/* Default styles for social links */
+.social-links {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    width: 70px; /* Adjust icon size as needed */
+    height: 70px; /* Adjust icon size as needed */
+    margin: 0 20px; /* Adjust margin between icons */
+    transition: transform 0.3s ease-in-out;
+    margin-top: 20px;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 768px) {
+    .social-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    .social-icon {
+      width: 40px; /* Adjusted size for mobile */
+      height: 40px; /* Adjusted size for mobile */
+      margin: 10px; /* Adjusted margin for mobile */
+    }
+  }
+  
+  
