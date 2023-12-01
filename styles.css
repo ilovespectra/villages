@@ -33,6 +33,7 @@ nav{
     align-items: center;
     gap: 10px;
     animation: fallInPlace 1.5s ease-in-out;
+    max-width: 70vh;
 }
 
 .businessName {
@@ -40,7 +41,8 @@ nav{
     align-items: center;
     gap: 10px;
     animation: fallInPlace 1.5s ease-in-out;
-}
+    max-width: 70vh;
+} 
 
 .scroll-fade-in {
     opacity: 0;
@@ -160,16 +162,41 @@ footer form .submit_btn {
 }
 
 .banner_heading_img .heading {
-    width: 60%;
+    width: 100%;
     margin-right: 0px;
     overflow-x: hidden; 
 }
 
 .banner_heading_img .heading h1 {
-    font-size: 120px !important;
+    font-size: 70px;
     animation: fadeIn 2s ease-in-out 1;
     overflow-x: hidden; 
 }
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    /* Place text over the logo image */
+    .businessName {
+      position: absolute;
+      top: 70%; /* Adjust the top position as needed */
+      left: 30%; /* Adjust the left position as needed */
+      margin-right: 20px;
+      z-index: 1; /* Ensure the text is above the image */
+      text-align: center;
+      font-size: 24px; /* Adjust the font size as needed */
+    }
+  
+    /* Adjust the logo image size */
+    .banner_heading_img .banner_img img {
+      width: 100%; /* Ensure the image takes the full width */
+      margin: 0 auto; /* Center the image */
+      display: block;
+      position: center;
+      bottom: 0px;
+      z-index: 0; /* Ensure the image stays below the text */
+    }
+  }
+  
 
 @keyframes fadeIn {
     0% {
@@ -184,75 +211,16 @@ footer form .submit_btn {
 }
 
 .banner_heading_img .banner_img {
-    width: 50%;
     position: relative;
     overflow-x: hidden; 
 }
 
 .banner_heading_img .banner_img img {
-    width: 110%;
+    width: 100%;
     margin: 0px;
     position: relative;
     bottom: 0px;
     overflow-x: hidden; 
-}
-
-@media screen and (min-width: 1264px) and (max-width: 1400px) {
-    /* -------------banner-------------- */
-    .banner_heading_img .heading h1 {
-        font-size: 100px !important;
-    }
-}
-
-@media screen and (min-width: 850px) and (max-width: 1264px) {
-    /* -------------banner-------------- */
-    .banner_heading_img .heading h1 {
-        font-size: 80px !important;
-    }
-}
-@media screen and (min-width:767px) and (max-width:850px){
-    /* ------------banner---------------- */
-    .banner_heading_img .heading h1 {
-        font-size: 60px;
-    }
-}
-@media screen  and (min-width:560px) and (max-width:767px){
-    /* ------------banner---------------- */
-    .banner_heading_img .heading h1 {
-        font-size: 40px;
-    }
-}
-@media screen  and (min-width:450px) and (max-width:560px){
-    /* ------------banner---------------- */
-    .banner_heading_img .heading h1 {
-        font-size: 40px;
-    }
-}
-@media screen and (max-width:450px){
-    /* ------------banner---------------- */
-    .banner_heading_img .heading h1 {
-        font-size: 20px;
-    }
-}
-@media screen and (max-width:767px){
-    /* ------------banner---------------- */
-    .banner{
-        padding: 100px 10% 40px;
-    }
-    .banner_heading_img {
-        flex-direction: column;
-        text-align: center;
-    }
-    .banner_heading_img .banner_img{
-        width: 100%;
-    }
-    .banner_heading_img .heading{
-        width: 100%;
-    }
-    .banner_heading_img .banner_img img{
-        width: 100%;
-        position: static;
-    }
 }
 /* -----------------About Us Section-------------- */
 .aboutUs_row{
@@ -667,6 +635,12 @@ footer form .submit_btn {
     text-shadow: 0 0 10px #d9ff00; /* Glowing drop shadow effect */
   }
   
+  @media screen and (max-width: 768px) {
+    /* Adjust the positioning for the ticker tape */
+    #ticker.fixed-top {
+      top: 27px; /* Example adjustment for positioning */
+    }
+  }
   /* Keyframes for the scrolling animation */
   @keyframes scrollText {
     0% {
