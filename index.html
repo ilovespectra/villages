@@ -349,34 +349,6 @@
       });
     </script>
     <script>
-      // JavaScript to handle the animation
-      document.addEventListener("DOMContentLoaded", function () {
-        const landingPage = document.querySelector(".landing-page");
-        const welcomeText = document.querySelector(".welcome-text");
-        const blueBar = document.querySelector(".blue-bar");
-
-        // Initial animation
-        welcomeText.style.opacity = "0";
-        blueBar.style.transform = "scaleX(0)";
-
-        setTimeout(function () {
-          // Animate the welcome text
-          welcomeText.style.transition = "opacity 1s ease-in-out";
-          welcomeText.style.opacity = "1";
-
-          // Animate the blue bar
-          blueBar.style.transition = "transform 3s ease-in-out";
-          blueBar.style.transform = "scaleX(1)";
-
-          // Fade out the landing page
-          setTimeout(function () {
-            landingPage.style.transition = "opacity 2s ease-in-out";
-            landingPage.style.opacity = "0";
-          }, 2000); // After 3 seconds
-        }, 500); // After 500 milliseconds
-      });
-    </script>
-    <script>
       const ticker = document.querySelector(".ticker-text span");
 
       function animateTicker() {
