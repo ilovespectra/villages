@@ -421,7 +421,7 @@ footer form .submit_btn {
     border-color: black;
 }
 .ourTeam_div>h1{
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -674,6 +674,7 @@ footer form .submit_btn {
     margin: 0 20px; /* Adjust margin between icons */
     transition: transform 0.3s ease-in-out;
     margin-top: 20px;
+    margin-bottom: 30px;
   }
   
   .social-icon:hover {
